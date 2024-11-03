@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/swiper.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      src="./js/app.js"
+      defer
+    ></script>
+    <title>SAKO</title>
+  </head>
+  <body>
+    <div style="margin: 50px 170px">
+      <section class="head flex justify-between items-center">
+        <p>Резюме</p>
+        <img
+          src="./img/logo.png"
+          alt=""
+          width="50px"
+        />
+        <p>Веб-разработчик</p>
+      </section>
+      <section
+        style="margin-top: 150px"
+        class="flex justify-center items-center gap-3"
+      >
+        <p style="color: var(--contrast)">20</p>
+        <div
+          style="width: 60%; height: 1px; background-color: var(--text-color)"
+        ></div>
+        <p style="color: var(--contrast)">24</p>
+      </section>
+      <section>
+        <h1
+          style="font-size: 145px"
+          class="bandit flex justify-center items-center"
+        >
+          КАСЫМ САГЫНГАЛИ
+        </h1>
+      </section>
+      <section class="flex justify-center items-center gap-5">
+        <button>Telegram</button>
+        <button>Email</button>
+        <button>Instagram</button>
+      </section>
+      <p class="mt-12 flex text-center justify-center hidden red">
+        *СКОПИРОВАНО*
+      </p>
+      <section>
+        <h1 class="bandit red text-6xl flex justify-center mt-12">21</h1>
+      </section>
+
+      <section style="margin-top: 250px">
+        <h1 class="bandit red text-9xl">НАВЫКИ</h1>
+        <div class="flex justify-between">
+          <div>
+            <img
+              src="./img/img.png"
+              alt="My Photo"
+              width="480px"
+            />
+          </div>
+          <div class="skills mt-12">
+            <p>
+              <strong>Инструменты для дизайна:</strong>
+              <red>Figma, Photoshop</red>
+            </p>
+            <p><strong>Контроль версий:</strong> <red>Git, GitHub</red></p>
+            <p><strong>CSS препроцессоры:</strong> <red>Sass</red></p>
+            <p>
+              <strong>Системы управления контентом:</strong>
+              <red>WordPress</red>
+            </p>
+            <p><strong>Адаптивная верстка:</strong> <red>Shad.cn</red></p>
+          </div>
+        </div>
+        <h1 class="bandit text-center red text-6xl mt-10">
+          Технические навыки
+        </h1>
+        <div class="skills mt-12">
+          <p>
+            <strong>Языки программирования:</strong>
+            <red>JavaScript, TypeScript, SQL</red>
+          </p>
+          <p><strong>Базы данных: </strong> <red> MySQL, PostgreSQL</red></p>
+          <p>
+            <strong>Фреймворки и библиотеки:</strong>
+            <red>React, Next.js, TailWindCSS</red>
+          </p>
+        </div>
+      </section>
+
+      <section class="form mt-40">
+        <h1 class="bandit red text-8xl text-center mb-20">Я напишу вам!</h1>
+        <form
+          action=""
+          method="post"
+          id="form"
+          class="flex flex-col gap-6 justify-center items-center"
+        >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email (не обязательно)"
+          />
+
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="Телефон номер"
+            required
+          />
+          <button type="submit">Отправить</button>
+          <p class="success text-center hidden">Сообщение доставлено!</p>
+        </form>
+      </section>
+    </div>
+    <script src="./js/order.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
