@@ -57,11 +57,31 @@
         </h1>
       </section>
       <section class="flex justify-center items-center gap-5">
-        <button>Telegram</button>
-        <button>Email</button>
-        <button>Instagram</button>
+        <a
+          href="https://t.me/Fal1Angel"
+          target="_blank"
+          ><button class="p-3">Telegram</button></a
+        >
+        <a
+          href="mailto:sako.delovoi@gmail.com"
+          target="_blank"
+          ><button
+            class="p-3"
+            id="email_me"
+          >
+            Email
+          </button></a
+        >
+        <a
+          href="https://www.instagram.com/sako_zip/profilecard/?igsh=dXg4OWhodG5wcnZ0"
+          target="_blank"
+          ><button class="p-3">Instagram</button></a
+        >
       </section>
-      <p class="mt-12 flex text-center justify-center hidden red">
+      <p
+        class="mt-12 flex text-center justify-center hidden red"
+        id="copyed"
+      >
         *СКОПИРОВАНО*
       </p>
       <section>
@@ -117,6 +137,7 @@
           class="flex flex-col gap-6 justify-center items-center"
         >
           <input
+            class="p-3 pl-3"
             type="text"
             id="name"
             name="name"
@@ -125,6 +146,7 @@
           />
 
           <input
+            class="p-3 pl-3"
             type="email"
             id="email"
             name="email"
@@ -132,13 +154,20 @@
           />
 
           <input
+            class="p-3 pl-3"
             type="number"
             id="phone"
             name="phone"
             placeholder="Телефон номер"
             required
           />
-          <button type="submit">Отправить</button>
+          <button
+            class="p-3"
+            type="submit"
+            id="send"
+          >
+            Отправить
+          </button>
           <p class="success text-center hidden">Сообщение доставлено!</p>
         </form>
       </section>

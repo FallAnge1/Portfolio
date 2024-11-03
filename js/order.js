@@ -33,4 +33,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
     .finally(() => {
       console.log('Скрипт выполнен')
     })
+  this.name.value = ''
+  this.phone.value = ''
+  this.email.value = ''
 })
