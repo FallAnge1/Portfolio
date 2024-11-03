@@ -31,13 +31,6 @@ body {
 red {
   color: var(--contrast);
 }
-red::after {
-  background-color: var(--light-color);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
 button {
   border: 3px solid var(--text-color);
   border-radius: 50px;

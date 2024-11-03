@@ -6,21 +6,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script>
+      if (window.innerWidth <= 480) {
+        window.location.href = 'mobile.html' // Перенаправление на мобильную версию
+      }
+    </script>
+    <link
+      rel="icon"
+      href="img/favicon.ico"
+    />
     <link
       rel="stylesheet"
       href="/css/index.css"
     />
-    <link
-      rel="stylesheet"
-      href="/css/swiper.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script
       src="./js/app.js"
       defer
@@ -40,7 +39,7 @@
       </section>
       <section
         style="margin-top: 150px"
-        class="flex justify-center items-center gap-3"
+        class="year flex justify-center items-center gap-3"
       >
         <p style="color: var(--contrast)">20</p>
         <div

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="img/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/mobile.css"
+    />
+    <script
+      src="./js/app.js"
+      defer
+    ></script>
+    <title>SAKO</title>
+  </head>
+  <body>
+    <div class="body">
+      <img
+        src="./img/logo.png"
+        alt=""
+        width="50px"
+        class="logo"
+      />
+      <section class="head">
+        <p>Резюме</p>
+        <p>Веб-разработчик</p>
+      </section>
+      <section class="year">
+        <p style="color: var(--contrast)">20</p>
+        <div
+          style="width: 60%; height: 1px; background-color: var(--text-color)"
+        ></div>
+        <p style="color: var(--contrast)">24</p>
+      </section>
+
+      <section>
+        <h1
+          style="font-size: 70px; text-align: center"
+          class="bandit my-name"
+        >
+          КАСЫМ<br />САГЫНГАЛИ
+        </h1>
+      </section>
+
+      <section class="centered">
+        <a
+          href="https://t.me/Fal1Angel"
+          target="_blank"
+          ><button class="p-3">Telegram</button></a
+        >
+        <a
+          href="mailto:sako.delovoi@gmail.com"
+          target="_blank"
+          ><button
+            class="p-3"
+            id="email_me"
+          >
+            Email
+          </button></a
+        >
+        <a
+          href="https://www.instagram.com/sako_zip/profilecard/?igsh=dXg4OWhodG5wcnZ0"
+          target="_blank"
+          ><button class="p-3">Instagram</button></a
+        >
+      </section>
+      <p
+        class="red centered hidden"
+        style="margin: 20px 0"
+        id="copyed"
+      ></p>
+      <section>
+        <div
+          class="centered"
+          style="margin: 30px 0px 50px 0px; align-items: end"
+        >
+          <img
+            src="./img/img.png"
+            alt="My Photo"
+            width="250px"
+          />
+          <h1
+            style="font-size: 70px"
+            class="bandit red centered"
+          >
+            21
+          </h1>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1
+            class="bandit red centered"
+            style="font-size: 50px; text-align: center; margin: 50px 0"
+          >
+            Технические навыки
+          </h1>
+
+          <div class="skills mt-12">
+            <p>
+              <strong>Языки программирования:</strong>
+              <span class="skills-red">JavaScript, TypeScript, SQL</span>
+            </p>
+            <p>
+              <strong>Базы данных: </strong>
+              <span class="skills-red"> MySQL, PostgreSQL</span>
+            </p>
+            <p>
+              <strong>Фреймворки и библиотеки:</strong>
+              <span class="skills-red">React, Next.js, TailWindCSS</span>
+            </p>
+          </div>
+          <h1
+            class="bandit red centered"
+            style="font-size: 70px; margin: 50px 0"
+          >
+            НАВЫКИ
+          </h1>
+          <div class="skills">
+            <p>
+              <strong>Инструменты для дизайна:</strong><br />
+              <span class="skills-red">Figma, Photoshop</span>
+            </p>
+            <p>
+              <strong>Контроль версий:</strong><br />
+              <span class="skills-red">Git, GitHub</span>
+            </p>
+            <p>
+              <strong>CSS препроцессоры:</strong><br />
+              <span class="skills-red">Sass</span>
+            </p>
+            <p>
+              <strong>CMS:</strong><br />
+              <span class="skills-red">WordPress</span>
+            </p>
+            <p>
+              <strong>Адаптивная верстка:</strong><br />
+              <span class="skills-red">Shad.cn</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1
+          class="bandit red"
+          style="font-size: 60px; text-align: center; margin-bottom: 20px"
+        >
+          Я напишу вам!
+        </h1>
+        <form
+          action=""
+          method="post"
+          id="form"
+          class="form"
+        >
+          <input
+            class="p-3 pl-3"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+
+          <input
+            class="p-3 pl-3"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email (не обязательно)"
+          />
+
+          <input
+            class="p-3 pl-3"
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="Телефон номер"
+            required
+          />
+          <button
+            type="submit"
+            id="send"
+          >
+            Отправить
+          </button>
+          <p class="success text-center hidden">Сообщение доставлено!</p>
+        </form>
+      </section>
+    </div>
+    <script src="./js/order.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

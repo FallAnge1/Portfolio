@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Bandit;
+  src: url(/font/Pershotravneva55.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #f2e8cf;
+  --light-color: #a7c957;
+  --text-color: #386641;
+  --contrast: #bc4749;
+}
+html {
+  background-color: var(--bg-color);
+}
+body {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bandit {
+  font-family: Bandit, sans-serif;
+}
+.red {
+  color: var(--contrast);
+}
+.hidden {
+  display: none;
+}
+.skills-red {
+  color: var(--contrast);
+  text-align: end;
+  display: block;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  margin: 25px auto;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+button {
+  border: 2px solid var(--text-color);
+  padding: 10px;
+  margin: 10px 10px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 50px;
+  width: 25vw;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.skills {
+  line-height: 300%;
+}
+.skills > p {
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+input {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50px;
+  width: 80vw;
+  padding: 20px;
+}
