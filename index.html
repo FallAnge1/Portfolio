@@ -15,6 +15,20 @@
       rel="icon"
       href="img/favicon.ico"
     />
+
+    <script
+      src="./libs/gsap/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="./libs/gsap/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="./libs/gsap/ScrollSmoother.min.js"
+      defer
+    ></script>
+
     <link
       rel="stylesheet"
       href="/css/index.css"
@@ -27,149 +41,174 @@
     <title>SAKO</title>
   </head>
   <body>
-    <div style="margin: 50px 170px">
-      <section class="head flex justify-between items-center">
-        <p>Резюме</p>
-        <img
-          src="./img/logo.png"
-          alt=""
-          width="50px"
-        />
-        <p>Веб-разработчик</p>
-      </section>
-      <section
-        style="margin-top: 150px"
-        class="year flex justify-center items-center gap-3"
-      >
-        <p style="color: var(--contrast)">20</p>
-        <div
-          style="width: 60%; height: 1px; background-color: var(--text-color)"
-        ></div>
-        <p style="color: var(--contrast)">24</p>
-      </section>
-      <section>
-        <h1
-          style="font-size: 145px"
-          class="bandit flex justify-center items-center"
-        >
-          КАСЫМ САГЫНГАЛИ
-        </h1>
-      </section>
-      <section class="flex justify-center items-center gap-5">
-        <a
-          href="https://t.me/Fal1Angel"
-          target="_blank"
-          ><button class="p-3">Telegram</button></a
-        >
-        <a
-          href="mailto:sako.delovoi@gmail.com"
-          target="_blank"
-          ><button
-            class="p-3"
-            id="email_me"
-          >
-            Email
-          </button></a
-        >
-        <a
-          href="https://www.instagram.com/sako_zip/profilecard/?igsh=dXg4OWhodG5wcnZ0"
-          target="_blank"
-          ><button class="p-3">Instagram</button></a
-        >
-      </section>
-      <p
-        class="mt-12 flex text-center justify-center hidden red"
-        id="copyed"
-      >
-        *СКОПИРОВАНО*
-      </p>
-      <section>
-        <h1 class="bandit red text-6xl flex justify-center mt-12">21</h1>
-      </section>
-
-      <section style="margin-top: 250px">
-        <h1 class="bandit red text-9xl">НАВЫКИ</h1>
-        <div class="flex justify-between">
-          <div>
+    <div class="wrapper">
+      <div class="content">
+        <div style="margin: 50px 170px">
+          <section class="head flex justify-between items-center">
+            <p>Резюме</p>
             <img
-              src="./img/img.png"
-              alt="My Photo"
-              width="480px"
+              src="./img/logo.png"
+              alt=""
+              width="50px"
             />
-          </div>
-          <div class="skills mt-12">
-            <p>
-              <strong>Инструменты для дизайна:</strong>
-              <red>Figma, Photoshop</red>
-            </p>
-            <p><strong>Контроль версий:</strong> <red>Git, GitHub</red></p>
-            <p><strong>CSS препроцессоры:</strong> <red>Sass</red></p>
-            <p>
-              <strong>Системы управления контентом:</strong>
-              <red>WordPress</red>
-            </p>
-            <p><strong>Адаптивная верстка:</strong> <red>Shad.cn</red></p>
-          </div>
-        </div>
-        <h1 class="bandit text-center red text-6xl mt-10">
-          Технические навыки
-        </h1>
-        <div class="skills mt-12">
-          <p>
-            <strong>Языки программирования:</strong>
-            <red>JavaScript, TypeScript, SQL</red>
-          </p>
-          <p><strong>Базы данных: </strong> <red> MySQL, PostgreSQL</red></p>
-          <p>
-            <strong>Фреймворки и библиотеки:</strong>
-            <red>React, Next.js, TailWindCSS</red>
-          </p>
-        </div>
-      </section>
-
-      <section class="form mt-40">
-        <h1 class="bandit red text-8xl text-center mb-20">Я напишу вам!</h1>
-        <form
-          action=""
-          method="post"
-          id="form"
-          class="flex flex-col gap-6 justify-center items-center"
-        >
-          <input
-            class="p-3 pl-3"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Имя"
-            required
-          />
-
-          <input
-            class="p-3 pl-3"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email (не обязательно)"
-          />
-
-          <input
-            class="p-3 pl-3"
-            type="number"
-            id="phone"
-            name="phone"
-            placeholder="Телефон номер"
-            required
-          />
-          <button
-            class="p-3"
-            type="submit"
-            id="send"
+            <p>Веб-разработчик</p>
+          </section>
+          <section
+            style="margin-top: 150px"
+            class="year flex justify-center items-center gap-3"
           >
-            Отправить
-          </button>
-          <p class="success text-center hidden">Сообщение доставлено!</p>
-        </form>
-      </section>
+            <p style="color: var(--contrast)">20</p>
+            <div
+              style="
+                width: 60%;
+                height: 1px;
+                background-color: var(--text-color);
+              "
+            ></div>
+            <p style="color: var(--contrast)">24</p>
+          </section>
+          <section>
+            <h1
+              data-speed="1.2"
+              style="font-size: 145px"
+              class="bandit flex justify-center items-center sako"
+            >
+              КАСЫМ САГЫНГАЛИ
+            </h1>
+          </section>
+          <section class="flex justify-center items-center gap-5">
+            <a
+              href="https://t.me/Fal1Angel"
+              target="_blank"
+              ><button class="p-3">Telegram</button></a
+            >
+            <a
+              href="mailto:sako.delovoi@gmail.com"
+              target="_blank"
+              ><button
+                class="p-3"
+                id="email_me"
+              >
+                Email
+              </button></a
+            >
+            <a
+              href="https://www.instagram.com/sako_zip/profilecard/?igsh=dXg4OWhodG5wcnZ0"
+              target="_blank"
+              ><button class="p-3">Instagram</button></a
+            >
+          </section>
+          <p
+            class="mt-12 flex text-center justify-center hidden red"
+            id="copyed"
+          >
+            *СКОПИРОВАНО*
+          </p>
+          <section>
+            <h1 class="bandit red text-6xl flex justify-center mt-12">21</h1>
+          </section>
+
+          <section style="margin-top: 250px">
+            <h1
+              data-speed=".8"
+              class="bandit red text-9xl gsap-skills"
+            >
+              НАВЫКИ
+            </h1>
+            <div class="flex justify-between">
+              <div
+                data-speed=".9"
+                class="gsap-photo"
+              >
+                <img
+                  src="./img/img.png"
+                  alt="My Photo"
+                  width="480px"
+                />
+              </div>
+              <div class="skills mt-12 skills_right">
+                <p>
+                  <strong>Инструменты для дизайна:</strong>
+                  <red>Figma, Photoshop</red>
+                </p>
+                <p><strong>Контроль версий:</strong> <red>Git, GitHub</red></p>
+                <p><strong>CSS препроцессоры:</strong> <red>Sass</red></p>
+                <p>
+                  <strong>Системы управления контентом:</strong>
+                  <red>WordPress</red>
+                </p>
+                <p><strong>Адаптивная верстка:</strong> <red>Shad.cn</red></p>
+              </div>
+            </div>
+            <h1
+              data-speed=".9"
+              class="bandit text-center red text-6xl mt-10 gsap-skills2"
+            >
+              Технические навыки
+            </h1>
+            <div
+              data-speed="1.1"
+              class="skills mt-12 skills_left"
+            >
+              <p>
+                <strong>Языки программирования:</strong>
+                <red>JavaScript, TypeScript, SQL</red>
+              </p>
+              <p>
+                <strong>Базы данных: </strong> <red> MySQL, PostgreSQL</red>
+              </p>
+              <p>
+                <strong>Фреймворки и библиотеки:</strong>
+                <red>React, Next.js, TailWindCSS</red>
+              </p>
+            </div>
+          </section>
+
+          <section class="form mt-20 mb-40">
+            <h1 class="bandit red text-8xl text-center mb-20">Я напишу вам!</h1>
+            <form
+              action=""
+              method="post"
+              id="form"
+              class="flex flex-col gap-6 justify-center items-center"
+            >
+              <input
+                class="p-3 pl-3"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+
+              <input
+                class="p-3 pl-3"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email (не обязательно)"
+              />
+
+              <input
+                class="p-3 pl-3"
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Телефон номер"
+                required
+              />
+              <button
+                class="p-3"
+                type="submit"
+                id="send"
+              >
+                Отправить
+              </button>
+              <p class="success text-center hidden">Сообщение доставлено!</p>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
     <script src="./js/order.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
